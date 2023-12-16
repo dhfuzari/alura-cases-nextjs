@@ -311,10 +311,17 @@ export default function HomeScreen() {
                     </Button>
                   </Box>
                 </Box>
+                <Box
+                  styleSheet={{ marginTop: theme.space.x4 }}
+                >
+                  <Link href="/ssg">SSG</Link>
+                </Box>
+                <Box>
+                  <Link href="/ssr">SSR</Link>
+                </Box>
               </Box>
             </Box>
           </Box>
-
           <SideImage />
         </Box>
       </Box>
