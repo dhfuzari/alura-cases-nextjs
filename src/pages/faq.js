@@ -12,7 +12,7 @@
   // console.log(Em modo DEV, sempre roda! A cada acesso recebido(roda no lado do server))
 //}
 
-import FAQScreen from '../src/screens/FAQScreen';
+import FAQScreen from '../screens/FAQScreen';
 
 export default FAQScreen; 
 

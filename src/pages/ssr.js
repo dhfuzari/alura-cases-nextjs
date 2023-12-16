@@ -1,18 +1,18 @@
-import Link from "../src/components/Link";
-import { Text } from "../src/theme/components";
-import { theme } from "../src/theme/theme";
-import { delay } from "../src/utils/delay";
+import Link from "../components/Link";
+import { Text } from "../theme/components";
+import { theme } from "../theme/theme";
+import { delay } from "../utils/delay";
 
-export const getStaticProps = (async () => {
+export const getServerSideProps = (async () => {
   await delay(5);
-  return { props: { message: `I've been generated on build time` } }
+  return { props: { message: `I've been rendered` } }
 });
 
 export default function Ssr({ message }) {
   return (
     <>
       <div>
-        Static site Generation
+        Server side rendering
       </div>
       <p>
         {message}
